@@ -1,14 +1,48 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+    margin: 0;
+    padding: 0;
 }
-nav ul, footer ul {
+
+body {
+    margin:0;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
@@ -27,17 +61,35 @@ p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
+    margin-bottom: 20px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.showcase{
+    background-image: url('../img/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: flex-end;
+    padding: 0 50px;
 }
 
-ul.posts li {
-    list-style: none;
+.contend {
+    display: block;
+    justify-content: flex-end;
+}
+
+.showcase h1 {
+    font-size: 60px;
+}
+
+.showcase h2 {
+    font-size: 40px;
 }
