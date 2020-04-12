@@ -35,5 +35,35 @@ body {
     
     /* Margins */
     margin-top: 0;
-    margin-bottom: 0.5em;
 }
+
+.showcase p {
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+
+.fa {
+    padding: 12px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.7;
+    border-radius: 22%;
+    display: inline-block;
+    margin: 0 14px;
+}
+  
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-github {
+    background: black;
+    color: white;
+} 
